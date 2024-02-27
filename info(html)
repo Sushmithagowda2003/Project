@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic HTML Page</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: #134478;
+            color: #ede6e6;
+            padding: 5px 2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cronkitenews.azpbs.org/wp-content/uploads/2019/04/dj-dairyfarm-6-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: rgb(242, 242, 243);
+            width: 150px;
+        }
+
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #134478;
+            color: #ede6e6;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(248, 245, 245); font-size: 28px; font-weight: bold;">Information</h1>
+    </header>
+    
+    <div class="container">
+        <div style="text-align: center;">
+            <label for="restlessness" style="font-weight: bold; color: #fffdfd;">Restlessness:</label>
+            <select id="restlessness" name="restlessness" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(242, 242, 243); width: 180px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+        </div>
+        
+        
+        <div style="text-align: center;">
+            <label for="decreased-milk" style="font-weight: bold; color: hsl(0, 8%, 97%);">Decrease in milk production:</label>
+            <select id="decreased-milk" name="decreased-milk" style="padding: 8px 5px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(242, 242, 243); width: 150px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+        </div>
+        
+        <div style="text-align: center;">
+            <label for="standing" style="font-weight: bold; color: #fefdfb;">Standing to be mounted:</label>
+            <select id="standing" name="standing" style="padding: 8px 5px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(239, 241, 250); width: 150px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+        </div>
+        
+        
+        <div style="text-align: center;">
+            <label for="mucus" style="font-weight: bold; color: #fcfcfb;">Presence of clear mucus:</label>
+            <select id="mucus" name="mucus" style="padding: 8px 5px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(242, 242, 243); width: 150px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+        </div>
+        
+        <div style="text-align: center;">
+            <label for="mucus" style="font-weight: bold; color: #fefefc;">Presence of clear mucus:</label>
+            <select id="mucus" name="mucus" style="padding: 10px 5px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(242, 242, 243); width: 150px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <label for="sniffing-nudging" style="font-weight: bold; color: #f4f4f1;">Sniffing and nudging:</label>
+            <select id="sniffing-nudging" name="sniffing-nudging" style="padding: 8px 5px; border-radius: 5px; border: 1px solid #ccc; background-color: rgb(242, 242, 243); width: 150px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+           <br><br> 
+           </div>
+
+        <button type="button" onclick="calculateResult()">Submit</button>
+
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        &copy; Estrus cycle detection.
+    </footer>
+
+    <script>
+        function calculateResult() {
+            var restlessness = parseInt(document.getElementById('restlessness').value);
+            var decreasedMilk = parseInt(document.getElementById('decreased-milk').value);
+            var standing = parseInt(document.getElementById('standing').value);
+            var mucus = parseInt(document.getElementById('mucus').value);
+            var sniffingNudging = parseInt(document.getElementById('sniffing-nudging').value);
+
+            
+        }
+    </script>
+</body>
+</html>
